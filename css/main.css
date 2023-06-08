@@ -4,3 +4,12 @@
     float:left;
     margin: 2%;
 }
+
+.button{
+    float:left;
+}
+
+.button:hover{
+    background-color: black;
+    color:white;
+}

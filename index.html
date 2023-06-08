@@ -20,111 +20,122 @@
   <body>
     <h1>Hello, world!</h1>
     <div class="output">
-        <div class="outputHeader">
-            <h4>Current Order:</h4>
-            <div class="orderTotal"><h4 id="orderTotal"></h4>R0.00</div>
-        </div>
+      <div class="outputHeader">
+          <h4>Current Order:</h4>
+          <div class="orderTotal"><h4 id="orderTotal"></h4>R0.00</div>
+      </div>
+
+      <div id="orderAmount">
+
+      </div>
+
+      <div class="card">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text"><strong>Name:</strong>Value</p>
+              <p class="card-text"><strong>Size:</strong>Value</p>
+              <p class="card-text"><strong>Toppings:</strong>Value</p>
+              <p class="card-text"><strong>Cost:</strong>Value</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+      </div>
+
     </div>
 
-    <div id="orderAmount">
+    
 
-    </div>
-
-    <div class="card">
-        <div class="card-body">
-            This is some text within a card body.
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"><strong>Name:</strong>Value</p>
-            <p class="card-text"><strong>Size:</strong>Value</p>
-            <p class="card-text"><strong>Toppings:</strong>Value</p>
-            <p class="card-text"><strong>Cost:</strong>Value</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
+  
 
     <div class="card-deck">
         <div class="card">
-          <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+          <img class="card-img-top" src="../assets/fresh-tasty-burger-isolated-on-260nw-705104968.jpg.webp" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Supreme Crunch</h5>
+            <p class="card-text"><h2>R25.90</h2></p>
+            <button type="button" class="btn btn-light" onclick="makeOrder()">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABc0lEQVR4nO2WMUoDQRSG/0KIjViZLpWKlYIpQ4R4Ab2AllqoF0injTlBcoFYSUDiBcwJVsRS7SWiYLDQKvLgDwzhzczb7MZC9oMpZv/3/2/CTHYWKCiwM045/u8CYhQLGOe1Bd8z7LtvSFYqFnNsPhmlNAso0zTM4RAOOZdMM+s0PSE7z8xaS2Oq0pR49AqAHoARxw2ADU9twizJNLNL052n+buyxx/UphlQl0wz+zT1Fa0XOGjXSn2fmmSaOaSpq2gjp2ENQN2Zfyr1XWqSaeaUpraifTkNpfmOMxdtmjY1yTTTpOlS0R4DW/Cg1LeoSaaZVsB0EVjAeeDHSKaZDk0nirYE4FVpLi+cZaX+LLCdXq5oOoicEXdoi40daC+3NO159AUA907zhM9Cf2nJNDOgqRGo2eItJ2MzUNdglmSaSWjajtQdAzjK+FpXeaFpFdmZXGxyKZl5o2klhwVoV3uUnzl8kEimidIcms/0VVSAv+AXTL75DYB3SekAAAAASUVORK5CYII=">
+            </button>
           </div>
 
         </div>
 
         <div class="card">
-          <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+          <img class="card-img-top" src="../assets/burger2.jpeg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Brunch Burger</h5>
+            <p class="card-text"><h2>R28.90</h2></p>
+            <button type="button" class="btn btn-light" onclick="makeOrder()">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABc0lEQVR4nO2WMUoDQRSG/0KIjViZLpWKlYIpQ4R4Ab2AllqoF0injTlBcoFYSUDiBcwJVsRS7SWiYLDQKvLgDwzhzczb7MZC9oMpZv/3/2/CTHYWKCiwM045/u8CYhQLGOe1Bd8z7LtvSFYqFnNsPhmlNAso0zTM4RAOOZdMM+s0PSE7z8xaS2Oq0pR49AqAHoARxw2ADU9twizJNLNL052n+buyxx/UphlQl0wz+zT1Fa0XOGjXSn2fmmSaOaSpq2gjp2ENQN2Zfyr1XWqSaeaUpraifTkNpfmOMxdtmjY1yTTTpOlS0R4DW/Cg1LeoSaaZVsB0EVjAeeDHSKaZDk0nirYE4FVpLi+cZaX+LLCdXq5oOoicEXdoi40daC+3NO159AUA907zhM9Cf2nJNDOgqRGo2eItJ2MzUNdglmSaSWjajtQdAzjK+FpXeaFpFdmZXGxyKZl5o2klhwVoV3uUnzl8kEimidIcms/0VVSAv+AXTL75DYB3SekAAAAASUVORK5CYII=">
+            </button>
           </div>
         </div>
 
         <div class="card">
-          <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+          <img class="card-img-top" src="../assets/burger3.jpeg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Dad's Choice</h5>
+            <p class="card-text"><h2>R45.90</h2></p>
+            <button type="button" class="btn btn-light" onclick="makeOrder()">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABc0lEQVR4nO2WMUoDQRSG/0KIjViZLpWKlYIpQ4R4Ab2AllqoF0injTlBcoFYSUDiBcwJVsRS7SWiYLDQKvLgDwzhzczb7MZC9oMpZv/3/2/CTHYWKCiwM045/u8CYhQLGOe1Bd8z7LtvSFYqFnNsPhmlNAso0zTM4RAOOZdMM+s0PSE7z8xaS2Oq0pR49AqAHoARxw2ADU9twizJNLNL052n+buyxx/UphlQl0wz+zT1Fa0XOGjXSn2fmmSaOaSpq2gjp2ENQN2Zfyr1XWqSaeaUpraifTkNpfmOMxdtmjY1yTTTpOlS0R4DW/Cg1LeoSaaZVsB0EVjAeeDHSKaZDk0nirYE4FVpLi+cZaX+LLCdXq5oOoicEXdoi40daC+3NO159AUA907zhM9Cf2nJNDOgqRGo2eItJ2MzUNdglmSaSWjajtQdAzjK+FpXeaFpFdmZXGxyKZl5o2klhwVoV3uUnzl8kEimidIcms/0VVSAv+AXTL75DYB3SekAAAAASUVORK5CYII=">
+            </button>
           </div>
         </div>
 
         <div class="card">
-            <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+            <img class="card-img-top" src="../assets/burger4.jpeg" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Cheesy Meal</h5>
+              <p class="card-text"><h2>R56.90</h2></p>
+              <button type="button" class="btn btn-light" onclick="makeOrder()">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABc0lEQVR4nO2WMUoDQRSG/0KIjViZLpWKlYIpQ4R4Ab2AllqoF0injTlBcoFYSUDiBcwJVsRS7SWiYLDQKvLgDwzhzczb7MZC9oMpZv/3/2/CTHYWKCiwM045/u8CYhQLGOe1Bd8z7LtvSFYqFnNsPhmlNAso0zTM4RAOOZdMM+s0PSE7z8xaS2Oq0pR49AqAHoARxw2ADU9twizJNLNL052n+buyxx/UphlQl0wz+zT1Fa0XOGjXSn2fmmSaOaSpq2gjp2ENQN2Zfyr1XWqSaeaUpraifTkNpfmOMxdtmjY1yTTTpOlS0R4DW/Cg1LeoSaaZVsB0EVjAeeDHSKaZDk0nirYE4FVpLi+cZaX+LLCdXq5oOoicEXdoi40daC+3NO159AUA907zhM9Cf2nJNDOgqRGo2eItJ2MzUNdglmSaSWjajtQdAzjK+FpXeaFpFdmZXGxyKZl5o2klhwVoV3uUnzl8kEimidIcms/0VVSAv+AXTL75DYB3SekAAAAASUVORK5CYII=">
+              </button>
             </div>
           </div>
     </div>
 
     <div class="card-deck">
         <div class="card">
-          <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+          <img class="card-img-top" src="../assets/burger5.jpeg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Plain Jane</h5>
+            <p class="card-text"><h2>R35.90</h2></p>
+            <button type="button" class="btn btn-light" onclick="makeOrder()">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABc0lEQVR4nO2WMUoDQRSG/0KIjViZLpWKlYIpQ4R4Ab2AllqoF0injTlBcoFYSUDiBcwJVsRS7SWiYLDQKvLgDwzhzczb7MZC9oMpZv/3/2/CTHYWKCiwM045/u8CYhQLGOe1Bd8z7LtvSFYqFnNsPhmlNAso0zTM4RAOOZdMM+s0PSE7z8xaS2Oq0pR49AqAHoARxw2ADU9twizJNLNL052n+buyxx/UphlQl0wz+zT1Fa0XOGjXSn2fmmSaOaSpq2gjp2ENQN2Zfyr1XWqSaeaUpraifTkNpfmOMxdtmjY1yTTTpOlS0R4DW/Cg1LeoSaaZVsB0EVjAeeDHSKaZDk0nirYE4FVpLi+cZaX+LLCdXq5oOoicEXdoi40daC+3NO159AUA907zhM9Cf2nJNDOgqRGo2eItJ2MzUNdglmSaSWjajtQdAzjK+FpXeaFpFdmZXGxyKZl5o2klhwVoV3uUnzl8kEimidIcms/0VVSAv+AXTL75DYB3SekAAAAASUVORK5CYII=">
+            </button>
           </div>
 
         </div>
 
         <div class="card">
-          <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+          <img class="card-img-top" src="../assets/burger6.jpeg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Thin Meal</h5>
+            <p class="card-text"><h2>R37.90</h2></p>
+            <button type="button" class="btn btn-light" onclick="makeOrder()">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABc0lEQVR4nO2WMUoDQRSG/0KIjViZLpWKlYIpQ4R4Ab2AllqoF0injTlBcoFYSUDiBcwJVsRS7SWiYLDQKvLgDwzhzczb7MZC9oMpZv/3/2/CTHYWKCiwM045/u8CYhQLGOe1Bd8z7LtvSFYqFnNsPhmlNAso0zTM4RAOOZdMM+s0PSE7z8xaS2Oq0pR49AqAHoARxw2ADU9twizJNLNL052n+buyxx/UphlQl0wz+zT1Fa0XOGjXSn2fmmSaOaSpq2gjp2ENQN2Zfyr1XWqSaeaUpraifTkNpfmOMxdtmjY1yTTTpOlS0R4DW/Cg1LeoSaaZVsB0EVjAeeDHSKaZDk0nirYE4FVpLi+cZaX+LLCdXq5oOoicEXdoi40daC+3NO159AUA907zhM9Cf2nJNDOgqRGo2eItJ2MzUNdglmSaSWjajtQdAzjK+FpXeaFpFdmZXGxyKZl5o2klhwVoV3uUnzl8kEimidIcms/0VVSAv+AXTL75DYB3SekAAAAASUVORK5CYII=">
+            </button>
           </div>
         </div>
 
         <div class="card">
-          <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+          <img class="card-img-top" src="../assets/burger7.jpeg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Hunger Monster</h5>
+            <p class="card-text"><h2>R46.90</h2></p>
+            <button type="button" class="btn btn-light"onclick="makeOrder()" >
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABc0lEQVR4nO2WMUoDQRSG/0KIjViZLpWKlYIpQ4R4Ab2AllqoF0injTlBcoFYSUDiBcwJVsRS7SWiYLDQKvLgDwzhzczb7MZC9oMpZv/3/2/CTHYWKCiwM045/u8CYhQLGOe1Bd8z7LtvSFYqFnNsPhmlNAso0zTM4RAOOZdMM+s0PSE7z8xaS2Oq0pR49AqAHoARxw2ADU9twizJNLNL052n+buyxx/UphlQl0wz+zT1Fa0XOGjXSn2fmmSaOaSpq2gjp2ENQN2Zfyr1XWqSaeaUpraifTkNpfmOMxdtmjY1yTTTpOlS0R4DW/Cg1LeoSaaZVsB0EVjAeeDHSKaZDk0nirYE4FVpLi+cZaX+LLCdXq5oOoicEXdoi40daC+3NO159AUA907zhM9Cf2nJNDOgqRGo2eItJ2MzUNdglmSaSWjajtQdAzjK+FpXeaFpFdmZXGxyKZl5o2klhwVoV3uUnzl8kEimidIcms/0VVSAv+AXTL75DYB3SekAAAAASUVORK5CYII=">
+            </button>
           </div>
         </div>
 
         <div class="card">
-            <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+            <img class="card-img-top" src="../assets/burger8.jpeg" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Yummy Double</h5>
+              <p class="card-text"><h2>R37.90</h2></p>
+              <button type="button" class="btn btn-light" onclick="makeOrder()">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABc0lEQVR4nO2WMUoDQRSG/0KIjViZLpWKlYIpQ4R4Ab2AllqoF0injTlBcoFYSUDiBcwJVsRS7SWiYLDQKvLgDwzhzczb7MZC9oMpZv/3/2/CTHYWKCiwM045/u8CYhQLGOe1Bd8z7LtvSFYqFnNsPhmlNAso0zTM4RAOOZdMM+s0PSE7z8xaS2Oq0pR49AqAHoARxw2ADU9twizJNLNL052n+buyxx/UphlQl0wz+zT1Fa0XOGjXSn2fmmSaOaSpq2gjp2ENQN2Zfyr1XWqSaeaUpraifTkNpfmOMxdtmjY1yTTTpOlS0R4DW/Cg1LeoSaaZVsB0EVjAeeDHSKaZDk0nirYE4FVpLi+cZaX+LLCdXq5oOoicEXdoi40daC+3NO159AUA907zhM9Cf2nJNDOgqRGo2eItJ2MzUNdglmSaSWjajtQdAzjK+FpXeaFpFdmZXGxyKZl5o2klhwVoV3uUnzl8kEimidIcms/0VVSAv+AXTL75DYB3SekAAAAASUVORK5CYII=">
+              </button>
             </div>
           </div>
     </div>
@@ -132,4 +143,6 @@
    
   </body>
 </html>
+
+<a  href="https://icons8.com/icon/W3aqac1dfC-C/shop-local">Shop Local</a> icon by <a href="https://icons8.com">Icons8</a>
 
